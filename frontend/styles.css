@@ -1,0 +1,153 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #333;
+}
+
+/* Header Container */
+header {
+  background: #0850a0;
+  color: white;
+  padding: 1.5rem 2rem;
+}
+
+/* Top bar: logo left, link right */
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Logo */
+.logo {
+  height: 50px;
+  width: auto;
+}
+
+/* Navigation Link */
+.top-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.top-nav a:hover {
+  color: #f0ba1a;
+}
+
+/* Main Heading */
+.header-text {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.header-text h1 {
+  margin: 0.3rem 0;
+  font-size: 2.2rem;
+}
+
+.header-text p {
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+}
+
+section {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+h2 {
+  color: #0850a0;
+  margin-top: 2rem;
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+}
+
+.cta {
+  background: #f0ba1a;
+  color: #111c2e;
+  text-align: center;
+  padding: 1rem;
+  margin: 3rem 0;
+  font-weight: bold;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 3px;
+  user-select: none;
+  transition: background-color 0.3s ease;
+}
+
+.cta:hover {
+  background: #d6a715;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Investor Section */
+.investor-section {
+  background-color: #f9f9f9;
+  padding: 60px 20px;
+  text-align: center;
+  color: #111;
+}
+
+.investor-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.investor-section p,
+.investor-section ul {
+  max-width: 700px;
+  margin: 0 auto 20px auto;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.investor-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.investor-section li {
+  margin: 10px 0;
+}
+
+.investor-section a {
+  color: #0850a0;
+  text-decoration: underline;
+}
+
+/* Responsive Layout */
+@media (max-width: 600px) {
+  .header-top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .top-nav {
+    margin-top: 0.5rem;
+  }
+
+  .header-text h1 {
+    font-size: 1.7rem;
+  }
+
+  .header-text p {
+    font-size: 1rem;
+  }
+}
